@@ -1,0 +1,139 @@
+.section {
+  height: 100%;
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.content_title {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content_title h2 {
+  font-size: 1.2rem;
+  color: var(--tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+  background-color: #47658739;
+  padding: 6px;
+  border-radius: 4px;
+  
+}
+
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4rem;
+}
+
+.content_item {
+  display: flex;
+  gap: 4rem;
+  
+}
+
+
+.content_item_img {
+  display: flex;
+  flex: 1;
+ 
+}
+
+.content_item_img_back {
+  max-width: 100%;
+  border-radius: 48% 52% 44% 56% / 60% 37% 80% 44%;
+  background-color: var(--secondary);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 40px -7px;
+  object-fit: contain;
+
+}
+
+.content_item_img img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ; 
+}
+
+.content_items {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.content_items h2 {
+  font-size: 1.6rem;
+  color: var(--tertiary);
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.content_items p {
+  line-height: 2rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.Link {
+  display: inline-block;
+  background: transparent;
+  border: solid 2px var(--tertiary);
+  border-radius: 4px;
+  color: var(--tertiary);
+  padding: 1rem 3.4rem;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.Link:hover {
+  background-color: #476587d4;
+  color: var(--white);
+}
+
+
+
+@media (max-width: 850px) {
+  .content {
+    flex-direction: column-reverse;
+    gap: 4rem;
+    overflow: hidden;
+  }
+
+  .content_title {
+    text-align: center;
+    height: 8rem;
+  }
+
+  .content_item {
+    flex-direction: column;
+  }
+
+  .content_items {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content_item_img_back {
+    width: 300px;
+    height: 300px;
+  }
+
+  .content_item_img img {
+    height: 100%;
+  }
+
+  .content_item_img  {
+    justify-content: center;
+  }
+
+ 
+
+}
