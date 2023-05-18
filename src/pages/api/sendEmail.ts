@@ -14,12 +14,12 @@ export const sendEmail = async ({
   message,
 }: ContactFormData) => {
   const transporter = nodemailer.createTransport({
-    host: 'smtp.dreamhost.com',
+    host: '',
     port: 465,
     secure: true,
     auth: {
-      user: 'contato@mutualiza.com.br',
-      pass: 'ACY66c6P',
+      user: '',
+      pass: '',
     },
     tls: {
       // do not fail on invalid certs
